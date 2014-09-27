@@ -3,13 +3,18 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Edgar Lee -- Designer and Developer
 
 # THANKS
 
-    <name>
+    Quynh Tran, Stephen Lee,
+    Anita Chou for helping!
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     Normalize.css, jQuery, Modernizr
+    CSS-Minifier
+    Flaticon
+    Nginx
+
