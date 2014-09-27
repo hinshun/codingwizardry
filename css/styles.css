@@ -205,6 +205,14 @@ a.github img {
     0 0 70px 30px #fff,
     0 0 110px 50px #fffa75,
     0 0 120px 80px #dd75ff;
+  -webkit-box-shadow:
+    0 0 70px 30px #fff,
+    0 0 110px 50px #fffa75,
+    0 0 120px 80px #dd75ff;
+  -moz-box-shadow:
+    0 0 70px 30px #fff,
+    0 0 110px 50px #fffa75,
+    0 0 120px 80px #dd75ff;
 }
 
 img.ruby {
