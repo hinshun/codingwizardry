@@ -46,7 +46,7 @@ a {
 }
 
 .carousel nav {
-  position: absolute; 
+  position: absolute;
   z-index: 30;
   bottom: 15px;
   left: 0;
@@ -185,7 +185,7 @@ a.github:hover {
 }
 
 a.github img {
-  width: 80px; 
+  width: 80px;
 }
 
 .glow {
