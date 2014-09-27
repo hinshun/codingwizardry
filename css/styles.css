@@ -2,6 +2,13 @@ html, body {
   height: 100%;
 }
 
+@media screen and (max-width: 1012px) {
+  html, body {
+    min-height: 865px;
+  }
+}
+
+
 body {
   background-color: #fff;
   font-size: 16px;
@@ -20,16 +27,23 @@ a {
   width: 952px;
 }
 
+@media screen and (max-width: 1012px) {
+  .inner-col {
+    width: 748px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .inner-col {
+    width: auto;
+  }
+}
+
 #main-header {
 }
 
 #main-content {
-}
-
-.carousel {
-  position: relative;
-  height: 100%;
-  height: 100vh;
+  height: 100%
 }
 
 .slides {
@@ -42,6 +56,7 @@ a {
 
 .carousel {
   position: relative;
+  height: 100%;
 }
 
 .carousel .inner-col {
@@ -151,6 +166,17 @@ a {
   font-size: 20px;
 }
 
+@media screen and (max-width: 1012px) {
+  .slides .text {
+    width: 60%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
 .slides .text p {
   line-height: 30px;
   color: #ccc;
@@ -214,6 +240,16 @@ a.github img {
     0 0 120px 80px #dd75ff;
 }
 
+@media screen and (max-width: 1012px) {
+  .glow {
+    bottom: 380px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60px;
+  }
+}
+
 img.ruby {
   position: relative;
   top: -5px;
@@ -221,11 +257,27 @@ img.ruby {
   width: 120px;
 }
 
+@media screen and (max-width: 1012px) {
+  img.ruby {
+    top: 0;
+    left: -16px;
+    width: 80px;
+  }
+}
+
 img.avatar {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 450px;
+}
+
+@media screen and (max-width: 1012px) {
+  img.avatar {
+    left: 0;
+    margin: 0 auto;
+    width: 360px;
+  }
 }
 
 
