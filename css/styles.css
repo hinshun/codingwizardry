@@ -25,7 +25,7 @@ a {
 .carousel {
   position: relative;
   height: 600px;
-  /* height: 100vh; */
+  text-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
 
 .slides {
@@ -72,7 +72,7 @@ a {
 .carousel .previous,
 .carousel .next {
   position: absolute;
-  width: 15%;
+  width: 10%;
   top: 0;
   bottom: 0;
   z-index: 10;
@@ -119,11 +119,10 @@ a {
   bottom: 0;
   z-index: 5;
   color: #fff;
-  text-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
 
 .slides section {
-  display: none;
+  visibility: hidden;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -134,7 +133,7 @@ a {
 }
 
 .slides section.current {
-  display: block;
+  visibility: visible;
 }
 
 .slides .text {
@@ -144,16 +143,17 @@ a {
   top: 0;
   bottom: 0;
   margin: auto 0;
+  font-size: 18px;
 }
 
 .slides .text p {
   line-height: 30px;
   color: #ccc;
-  color: rgba(255,255,255,.8);
+  color: rgba(221,210,247,.9);
 }
 
 .slides .hello {
-  background: #7857ad;
+  background: #2b116b;
   background-image: -webkit-radial-gradient(circle farthest-side at right bottom,#f5e4ee,#271d59 80%,#0c0433);
   background-image: -moz-radial-gradient(circle farthest-side at right bottom,#f5e4ee,#271d59 80%,#0c0433);
   background-image: -o-radial-gradient(circle farthest-side at right bottom,#f5e4ee,#271d59 80%,#0c0433);
@@ -186,10 +186,10 @@ a.github img {
   width: 80px;
 }
 
-.glow {
+.slides .hello .glow {
   position: absolute;
   z-index: 15;
-  bottom: 320px;
+  bottom: 240px;
   right: 250px;
   overflow: visible;
   width: 80px;
@@ -199,6 +199,40 @@ a.github img {
     0 0 60px 20px #fff,
     0 0 90px 40px #fffa75,
     0 0 100px 60px #dd75ff;
+  -webkit-box-shadow:
+    0 0 60px 20px #fff,
+    0 0 90px 40px #fffa75,
+    0 0 100px 60px #dd75ff;
+  -moz-box-shadow:
+    0 0 60px 20px #fff,
+    0 0 90px 40px #fffa75,
+    0 0 100px 60px #dd75ff;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity:0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  -webkit-transition-duration: 0s;
+  -moz-transition-duration: 0s;
+  -o-transition-duration: 0s;
+  transition-duration: 0s;
+}
+
+.slides .hello.current .glow {
+  bottom: 320px;
+  -webkit-transition: all 1s cubic-bezier(0.35,0,0.23,1);
+  -moz-transition: all 1s cubic-bezier(0.35,0,0.23,1);
+  -o-transition: all 1s cubic-bezier(0.35,0,0.23,1);
+  transition: all 1s cubic-bezier(0.35,0,0.23,1);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+  filter: alpha(opacity=1);
+  -moz-opacity:1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+.no-js .animate-rise {
+  bottom: 320px;
 }
 
 img.ruby {

@@ -7,17 +7,29 @@ $(function() {
   var currentSlide = 0;
   var numSlides = 3;
 
+  $('.slides .hello').removeClass('current').addClass('current');
+
   function changeSlide (change) {
     $('.carousel .current').removeClass('current');
     currentSlide = (currentSlide + change) % numSlides;
     setCarouselSlide(currentSlide);
   }
 
-  $('.carousel').on('click', '.next', function() {
-    changeSlide(1);
+  $('.carousel .next').on({
+    mouseenter: function() {
+      changeSlide(1);
+    },
+    click: function() {
+      changeSlide(1);
+    }
   });
 
-  $('.carousel').on('click', '.previous', function() {
-    changeSlide(-1);
+  $('.carousel .previous').on({
+    mouseenter: function() {
+      changeSlide(-1);
+    },
+    click: function() {
+      changeSlide(-1);
+    }
   });
 });
