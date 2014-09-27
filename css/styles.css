@@ -1,3 +1,7 @@
+html, body {
+  height: 100%;
+}
+
 body {
   background-color: #fff;
   font-size: 16px;
@@ -24,8 +28,8 @@ a {
 
 .carousel {
   position: relative;
-  height: 600px;
-  /* height: 100vh; */
+  height: 100%;
+  height: 100vh;
 }
 
 .slides {
@@ -191,30 +195,30 @@ a.github img {
 .glow {
   position: absolute;
   z-index: 15;
-  bottom: 320px;
-  right: 250px;
+  bottom: 400px;
+  right: 300px;
   overflow: visible;
   width: 80px;
   background-color: #fff;
   border-radius: 40px;
   box-shadow:
-    0 0 60px 20px #fff,
-    0 0 90px 40px #fffa75,
-    0 0 100px 60px #dd75ff;
+    0 0 70px 30px #fff,
+    0 0 110px 50px #fffa75,
+    0 0 120px 80px #dd75ff;
 }
 
 img.ruby {
   position: relative;
-  top: -3px;
-  left: -2px;
-  width: 80px;
+  top: -5px;
+  left: -26px;
+  width: 120px;
 }
 
 img.avatar {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 350px;
+  width: 450px;
 }
 
 
