@@ -8,6 +8,12 @@ html, body {
   }
 }
 
+@media screen and (max-width: 479px) {
+  html, body {
+    min-height: 795px;
+    min-width: 400px;
+  }
+}
 
 body {
   background-color: #fff;
@@ -177,6 +183,12 @@ a {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .slides .text {
+    width: 95%;
+  }
+}
+
 .slides .text p {
   line-height: 30px;
   color: #ccc;
@@ -250,6 +262,12 @@ a.github img {
   }
 }
 
+@media screen and (max-width: 479px) {
+  .glow {
+    bottom: 350px;
+  }
+}
+
 img.ruby {
   position: relative;
   top: -5px;
@@ -277,6 +295,12 @@ img.avatar {
     left: 0;
     margin: 0 auto;
     width: 360px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  img.avatar {
+    width: 320px;
   }
 }
 
