@@ -144,10 +144,11 @@ a {
 .slides .text {
   position: absolute;
   width: 50%;
-  height: 280px;
+  height: 290px;
   top: 0;
   bottom: 0;
   margin: auto 0;
+  font-size: 20px;
 }
 
 .slides .text p {
