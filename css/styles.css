@@ -1,0 +1,226 @@
+body {
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Merriweather', serif;
+  color: #717171;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner-col {
+  margin: 0 auto;
+  width: 952px;
+}
+
+#main-header {
+}
+
+#main-content {
+}
+
+.carousel {
+  position: relative;
+  height: 600px;
+  /* height: 100vh; */
+}
+
+.slides {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.carousel {
+  position: relative;
+}
+
+.carousel .inner-col {
+  position: relative;
+  min-height: 100%;
+}
+
+.carousel nav {
+  position: absolute; 
+  z-index: 30;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.carousel nav a {
+  display: inline-block;
+  cursor: pointer;
+  margin: 5px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #8d8d8d;
+  background-color: rgba(255,255,255,.3);
+}
+
+.carousel nav a.current {
+  background-color: rgba(255,255,255,.7);
+}
+
+.carousel .previous,
+.carousel .next {
+  position: absolute;
+  width: 15%;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  color: rgba(255,255,255,.3);
+}
+
+.carousel .previous i,
+.carousel .next i {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  height: 60px;
+  line-height: 60px;
+  font-size: 50px;
+}
+
+.carousel .previous:hover,
+.carousel .next:hover {
+  color: rgba(255,255,255,.7);
+}
+
+.carousel .previous {
+  left: 0;
+}
+
+.carousel .previous i {
+  left: 30px;
+}
+
+.carousel .next {
+  right: 0;
+}
+
+.carousel .next i {
+  right: 30px;
+}
+
+.slides {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.slides section {
+  display: none;
+  position: absolute;
+  left: -70px;
+  right: -70px;
+  padding-right: 70px;
+  padding-left: 70px;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.slides section.current {
+  display: block;
+}
+
+.slides .text {
+  position: absolute;
+  width: 50%;
+  height: 280px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.slides .text p {
+  line-height: 30px;
+  color: #ccc;
+  color: rgba(255,255,255,.8);
+}
+
+.slides .hello {
+  background: #7857ad;
+  background-image: -webkit-radial-gradient(circle farthest-side at right bottom,#f5e4ee,#271d59 80%,#0c0433);
+  background-image: -moz-radial-gradient(circle farthest-side at right bottom,#f5e4ee,#271d59 80%,#0c0433);
+  background-image: -o-radial-gradient(circle farthest-side at right bottom,#f5e4ee,#271d59 80%,#0c0433);
+  background-image: -ms-radial-gradient(circle farthest-side at right bottom,#f5e4ee,#271d59 80%,#0c0433);
+  background-image: radial-gradient(circle farthest-side at right bottom,#f5e4ee,#271d59 80%,#0c0433);
+}
+
+.slides .hello .text p {
+  margin-bottom: 30px;
+}
+
+a.github {
+  width: 100%;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  filter: alpha(opacity=30);
+  -moz-opacity: .3;
+  -khtml-opacity: .3;
+  opacity: .3;
+}
+
+a.github:hover {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+  filter: alpha(opacity=70);
+  -moz-opacity: .7;
+  -khtml-opacity: .7;
+  opacity: .7;
+}
+
+a.github img {
+  width: 80px; 
+}
+
+.glow {
+  position: absolute;
+  z-index: 15;
+  bottom: 320px;
+  right: 250px;
+  overflow: visible;
+  width: 80px;
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow:
+    0 0 60px 20px #fff,
+    0 0 90px 40px #fffa75,
+    0 0 100px 60px #dd75ff;
+}
+
+img.ruby {
+  position: relative;
+  top: -3px;
+  left: -2px;
+  width: 80px;
+}
+
+img.avatar {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+}
+
+
+#main-footer {
+}
+
+.no-js .carousel nav {
+  display: none;
+}
