@@ -6,13 +6,11 @@ and catalogue my engineering experiments.
 Feel free to take a look around if you are curious how I did certain features of
 the site.
 
-## Services used
+## Services
 
 Here are the services I used while constructing this site, you may or may not
 find them useful.
 
-* Registrar: [Namecheap](https://www.namecheap.com)
-* VPS: [DigitalOcean](https://www.digitalocean.com)
 * Webserver: [Nginx](http://nginx.com)
 * Icons & Packaging: [Flaticon](http://www.flaticon.com)
 * Favicon generation: [RealFaviconGenerator](http://realfavicongenerator.net)
